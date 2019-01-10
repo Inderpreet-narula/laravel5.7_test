@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    You are visitor # {{$current_visits_count}}
                 </div>
 
                 <div class="links">
