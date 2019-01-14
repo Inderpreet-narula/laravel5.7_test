@@ -1,5 +1,4 @@
 <?php
-$rollbar_token = getenv("ROLLBAR_ACCESS_TOKEN");
 return [
 
     /*
@@ -38,11 +37,6 @@ return [
             'secret' => env('STRIPE_WEBHOOK_SECRET'),
             'tolerance' => env('STRIPE_WEBHOOK_TOLERANCE', 300),
         ],
-    ],
-    
-    'rollbar' => [
-    'access_token' => $rollbar_token,
-    'level' => 'debug',
     ],
 
 ];

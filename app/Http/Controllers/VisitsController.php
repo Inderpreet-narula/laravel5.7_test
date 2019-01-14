@@ -9,6 +9,7 @@ class VisitsController extends Controller
 {
     public function saveVisitCount()
     {
+      \Log::debug('Test debug message');
     	$visit_details = Visit::first();
     	$visit = (!empty($visit_details)) ? $visit_details : new Visit();
    		$previous_visits_count = ($visit->visits)??0;
